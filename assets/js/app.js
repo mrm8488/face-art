@@ -16531,7 +16531,7 @@
         this._initWebcam(), this.startFaceDetection();
       }
       async _initWebcam() {
-        const t = await navigator.mediaDevices.getUserMedia({video: { facingMode: "user" } });
+        const t = await navigator.mediaDevices.getUserMedia({ video: {} });
         (this._videoEl = document.querySelector(".webcamVideo")),
           (this._videoEl.srcObject = t);
       }
